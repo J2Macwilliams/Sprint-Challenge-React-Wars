@@ -10,6 +10,11 @@ padding: 1%;
 margin: 1%;
 border-radius: 5px;
 box-sizing: border-box;
+
+  h2 {
+    color: dodgerBlue;
+  }
+
 `;
 
 

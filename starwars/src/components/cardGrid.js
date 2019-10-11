@@ -17,7 +17,6 @@ const CardGrid = () => {
       axios
         .get(`https://swapi.co/api/people/`)
         .then(response => {
-          console.log(response.data.results);
           setInfo(response.data.results)
         })
         .catch(error => {
