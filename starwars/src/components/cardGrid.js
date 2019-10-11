@@ -13,8 +13,6 @@ flex-wrap: wrap;
 const CardGrid = () => {
     const [info, setInfo] = useState([]);
   
-  
-
     useEffect(() => {
       axios
         .get(`https://swapi.co/api/people/`)
@@ -26,9 +24,9 @@ const CardGrid = () => {
           console.log("The data was not returned", error);
         });
     }, []);
-    
-  
+   
     return (
+        <div>
         <Grid>
              {info.map((item, index) => {
             return (
@@ -43,7 +41,7 @@ const CardGrid = () => {
             );
           })}
         </Grid>
-       
+       </div>
     );
 };
 

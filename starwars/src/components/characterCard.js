@@ -17,7 +17,7 @@ const CharacterCard = props => {
     return (
       
           <Card >
-            <h1>{props.name}</h1>
+            <h2>{props.name}</h2>
             <h4>Birth Year: {props.birth_year}</h4>
             <h4>Height: {props.height}cm</h4>
             <h4>Mass: {props.mass}kg</h4>
