@@ -1,4 +1,6 @@
 import React from 'react';
+import CardGrid from './components/cardGrid';
+// // import styled from "styled-components";
 import './App.css';
 
 const App = () => {
@@ -13,6 +15,7 @@ const App = () => {
     <div className="App">
       <h1 className="Header">React Wars</h1>
       <h2>I am a Jedi!</h2>
+      <CardGrid />
     </div>
   );
 }
