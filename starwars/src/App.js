@@ -2,10 +2,11 @@ import React from 'react';
 import CardGrid from './components/cardGrid';
 import styled from "styled-components";
 import './App.css';
-import Bgrnd from "./sw-bg.jpg"
+import bgrnd from "./sw-bg.jpg";
+import HiddenMessage from "./hiddenMessage";
 
 const Container = styled.section`
-  background-image: url(${Bgrnd});
+  background-image: url(${bgrnd});
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -28,7 +29,7 @@ const App = () => {
         <h1 className="Header">React Wars</h1>
         <CardGrid />
       </Container>
-
+      <HiddenMessage />
     </div>
   );
 }
