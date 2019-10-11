@@ -1,8 +1,14 @@
 import React, {useState, useEffect} from 'react';
 import axios from "axios";
 import Character from './characterCard';
-// import styled from "styled-components";
+import styled from "styled-components";
 
+const Grid = styled.div`
+width: 100%;
+display: flex;
+Justify-content: center;
+flex-wrap: wrap;
+`;
 
 const CardGrid = () => {
     const [info, setInfo] = useState([]);
@@ -23,7 +29,7 @@ const CardGrid = () => {
     
   
     return (
-        <div>
+        <Grid>
              {info.map((item, index) => {
             return (
               <Character 
@@ -36,7 +42,7 @@ const CardGrid = () => {
               />
             );
           })}
-        </div>
+        </Grid>
        
     );
 };

@@ -4,11 +4,11 @@ import styled from "styled-components";
 const Card = styled.div`
   background: black;
   color: white;
-width: 30%;
-opacity: .3;
-padding: 2%;
-margin: 2%;
-
+width: 15%;
+opacity: .6;
+padding: 1%;
+margin: 1%;
+border-radius: 5px;
 `;
 
 
@@ -18,10 +18,10 @@ const CharacterCard = props => {
       
           <Card >
             <h1>{props.name}</h1>
-            <h3>Birth Year: {props.birth_year}</h3>
-            <h3>Hieght: {props.height}</h3>
-            <h3>Mass: {props.mass}</h3>
-            <h3>Skin tone: {props.skin_color}</h3>
+            <h4>Birth Year: {props.birth_year}</h4>
+            <h4>Height: {props.height}cm</h4>
+            <h4>Mass: {props.mass}kg</h4>
+            <h4>Skin tone: {props.skin_color}</h4>
           </Card>
       
     );

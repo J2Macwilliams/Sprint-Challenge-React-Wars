@@ -2,6 +2,17 @@ import React from 'react';
 import CardGrid from './components/cardGrid';
 import styled from "styled-components";
 import './App.css';
+import Bgrnd from "./sw-bg.jpg"
+
+const Container = styled.section`
+  background-image: url(${Bgrnd});
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  flex-wrap:wrap;
+  width: 100%;
+  height:100vh;
+`;
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -13,9 +24,11 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1 className="Header">React Wars</h1>
-      <h2>I am a Jedi!</h2>
-      <CardGrid />
+      <Container>
+        <h1 className="Header">React Wars</h1>
+        <CardGrid />
+      </Container>
+
     </div>
   );
 }
