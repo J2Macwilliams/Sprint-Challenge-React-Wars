@@ -26,13 +26,25 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+ReactJS is a UI Component Library used for writing large applications and interacting with the DOM by using a virtual DOM. With a new coding language, JSX, it streamlines the coding process through incorporating HTML and JavaScript together. 
+
 - [ ] What does it mean to _think_ in react?
+
+React’s Paradigm in building large scale applications, makes a developer think strategically towards the hierarchy of data flow(props and state) . In understanding these as factors a developer can build an application that creates a responsive UI, scales to meet User interactivity, and doesn’t crash the DOM, through encouraging D.R.Y. code.
 
 - [ ] Describe state.
 
+State is like “Water”. It can change and become ice or vapor. As is the same for state in React. State can be set at the mounting of an app, but can continue to change through the use of said App.
+
+
 - [ ] Describe props.
 
+	Props are Static Properties that are passed down from Parent Elements to Child Elements. 
+
+
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+Side effects are anything that affects something outside of the function. React can use these side effects in the useEffect hook. The Effect hook will task a component to run that can affect changes to state or props changes. Syncing these changes creates efficiency in React Apps.
 
 ## Project Set Up
 

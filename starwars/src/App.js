@@ -1,5 +1,19 @@
 import React from 'react';
+import CardGrid from './components/cardGrid';
+import styled from "styled-components";
 import './App.css';
+import bgrnd from "./sw-bg.jpg";
+import HiddenMessage from "./hiddenMessage";
+
+const Container = styled.section`
+  background-image: url(${bgrnd});
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  flex-wrap:wrap;
+  width: 100%;
+  height:100vh;
+`;
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -11,7 +25,11 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1 className="Header">React Wars</h1>
+      <Container>
+        <h1 className="Header">React Wars</h1>
+        <CardGrid />
+      </Container>
+      <HiddenMessage />
     </div>
   );
 }
